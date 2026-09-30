@@ -8,3 +8,6 @@ This project demonstrates Git, GitHub and Jenkins Continuous Integration.
 - Subtraction
 - Automated testing using pytest
 - Jenkins CI pipeline
+## Author
+
+Mohanapriya M - 24BCS174
