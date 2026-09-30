@@ -22,11 +22,14 @@ pipeline {
         }
 
         stage('Test') {
-            steps {
-                echo 'Running pytest...'
-                bat 'python -m pytest -v'
-            }
-        }
+    steps {
+        echo 'Installing Python dependencies...'
+        bat 'python -m pip install -r requirements.txt'
+
+        echo 'Running pytest...'
+        bat 'python -m pytest -v'
+    }
+}
 
         stage('Result') {
             steps {
